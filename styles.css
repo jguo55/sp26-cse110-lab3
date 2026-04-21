@@ -1,0 +1,120 @@
+/* This is a CSS stylesheet! */
+.heading {
+    color:#CCAA88;
+    border-style:solid;
+    border-color: cadetblue;
+    border-width: 0.1em;
+    border-radius: 0.1em;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#name1 {
+    --main-color: color(srgb 1 0.5 0);
+    --backup-color: rgb(255, 255, 0);
+    color: var(--main-color, var(--backup-color))
+}
+
+#name2 {
+    color: hsl(0, 46%, 63%);
+}
+
+#name3 {
+    color:bisque
+}
+
+* {
+    font-family: Open Sans;
+}
+
+p {
+    color: rgb(30, 30, 30);
+    padding: 0.1em 0em 0.1em 0em;
+    display: inline;
+    position:relative;
+}
+
+a[href="/cse110_lab2/"] {
+    color: color-mix(in srgb, green 90%, red 10%)
+}
+
+.subteam:hover{
+    text-decoration: underline
+}
+
+h1, h2, h3 {
+    margin: 20px 20px 1px 5px;
+}
+
+#hidden{
+    display:hidden
+}
+
+audio {
+    height: 2em;
+    width: 10em;
+    max-width: 400px;
+    min-width: 200px;    
+}
+
+video {
+    position: relative;
+}
+
+h1:active {
+    color:pink;
+}
+
+.container {
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.container div{
+    flex-grow: 1;
+}
+
+.grid-container {
+    display: grid;
+    align-items: start;
+    gap: 10px;
+    grid-template-columns: max-content;
+}
+
+.grid-container div {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+@media (max-width: 720px){
+    p{
+        color: blue;
+    }
+}
+
+div > h3 {
+    color: plum;
+}
+
+h2 ~ div {
+    color:forestgreen;
+}
+
+h1 + section {
+    color:darkslategrey;
+}
+
+section.unfinished {
+    background-color: grey;
+    display: inline-block;
+}
+
+h1:has(+ section){
+    font-style: italic;
+}
+
+/* past combinators
+

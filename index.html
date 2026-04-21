@@ -4,30 +4,35 @@
     <title>Calculator App</title>
     <meta name="author" content="Jensen Guo">
     <link rel="icon" href="cat.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
         <nav>
-        <a href="..">Home</a> |
-        <a href="/cse110_lab2/">Sample Meeting</a> |
+        <a href="..">Home</a> | 
+        <a href="/cse110_lab2/">Sample Meeting</a> 
         </nav>
         <p>Calculator App Meeting Notes</p>
     </header>
     <main>
-        <h1>Calculator App First Meeting</h1>
-        <section>
-            <b>4/12/26</b>
-            <p>Note Takers: Jensen Guo</p>
-        </section>
-        <div></div>
+        <div>
+            <h1 class="heading">Calculator App First Meeting</h1>
+            <section>
+                <b>4/12/26</b>
+                <p>Note Takers: Jensen Guo</p>
+            </section>
+        <div>
         <span></span>
 
         <section>
-            <h2>Attendance</h2>
+            <h2 class="heading">Attendance</h2>
             <ul>
-                <li>Jensen Guo</li>
-                <li>John Doe</li>
-                <li>Sam Oh</li>
+                <li><span id="name1">Jensen Guo</span></li>
+                <li><span id="name2">John Doe</span></li>
+                <li><span id="name3">Sam Oh</span></li>
                 <li>Pujan Mehta</li>
                 <li>Jason Susanto</li>
                 <li>Wang Jing Jie</li>  
@@ -36,16 +41,16 @@
         </section>
 
         <section>
-            <h2>Agenda</h2>
+            <h2 class="heading">Agenda</h2>
             <ol>
                 <li>Introductions</li>
                 <li>Icebreaker Activity</li>
                 <li><strong>Project Overview</strong></li>
-                <li>Subteam Formation</li>
+                <li><span class="subteam">Subteam Formation</span></li>
             </ol>
         </section>
 
-        <section>
+        <section class="unfinished">
             <details>
                 <summary><b>Unfinished Items (from last meeting)</b></summary>
                 <p><i>First meeting, so nothing</i></p>
@@ -55,8 +60,8 @@
         <hr>
 
         <section>
-            <h2>Project Overview</h2>
-            <p>We are creating a <b>calculator web app</b>. We will be using <a href = "https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>.
+            <h2 class="heading">Project Overview</h2>
+            <p><br>We are creating a <b>calculator web app</b>. We will be using <a href = "https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>.
                 The purpose of this project is to learn the basics of web development, and see if we can make a functioning app that looks nice. We are also
                 going to try to see if we can also experiment with web advertising with Google Ads.
 
@@ -81,32 +86,59 @@
         </section>
 
         <section>
-            <h2>Subteam Formation</h2>
-            <p><em>Ran out of time. Moved to Unfinished section for the next meeting.</em></p>
+            <h2 class="heading">Subteam Formation</h2>
+            <p class="subteam"><em><br>Ran out of time. Moved to Unfinished section for the next meeting.</em></p>
         </section>
         
         <section>
-            <h2> Comments, Questions, Concerns</h2>
-            <p><b>Q:</b>  Team Member never used JavaScript before
-                <br>
-                <b>A:</b> It's okay, it's an intoductory project for us all
-            </p>
+            <h2 class="heading"> Future Schedule</h2>
+            <div class="container">
+                <div><h3>Tuesday</h3><p>Finish meeting. assign tasks</p></div>
+                <div><h3>Wednesday</h3><p>Form subteams? onboard new members</p></div>
+                <div><h3>Thursday</h3><p>Whatever's left</p></div>
+            </div>
+        </section>
+        
+        <section>
+            <h2 class="heading"> Comments, Questions, Concerns</h2>
+            <div class="grid-container">
+                <div><b>Q:</b>  Team Member never used JavaScript before
+                    <br>
+                    <b>A:</b> It's okay, it's an intoductory project for us all
+                </div>
+                    <div><b>Q:</b>  Will we be using AI tools for this project?
+                    <br>
+                    <b>A:</b> This is more of an intoductory learning and teambuilding experience. However these tools are acceptable given that you take responsibility for their output.
+                </div>
+                    <div><b>Q:</b>  How long will this project go for?
+                    <br>
+                    <b>A:</b> We are aiming for 1 week. However, depending on our project it may be extended to 2.
+                </div>
+                    <div><b>Q:</b>  What's next after this?
+                    <br>
+                    <b>A:</b> You'll see eventually
+                </div>
+            </div>
         </section>
 
         <section>
-            <h2> Meeting Media</h2>
+            <h2 class="heading"> Meeting Media</h2>
             <p>
                 <audio controls>
                     <source src="meeting_podcast.mp3">
                 </audio>
-                <video width = "320" controls>
-                    <source src="meeting_recording.mov">
+                <video width="320" controls>
+                    <source src="meeting_recording.mp4">
                 </video>
             </p>
         </section>
+
+        <section id="hidden">
+
+        </section>
             <hr>
         <section>
-            <h3>Contact Us!</h3>
+            <h3 class="heading">Contact Us!</h3>
             <form>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name"><br>
