@@ -116,5 +116,12 @@ h1:has(+ section){
     font-style: italic;
 }
 
+ul {
+    .highlight {
+        background-color: yellow;
+        display: inline-block
+    }
+}
+
 /* past combinators
 
